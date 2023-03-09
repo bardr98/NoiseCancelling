@@ -1,4 +1,3 @@
-# NoiseCancelling
 Basic implementation of noise cancelling in Python:
 
 1. The program reads an audio file using the wavfile.read() function from the SciPy library.
@@ -9,3 +8,5 @@ Basic implementation of noise cancelling in Python:
 6. The power spectrum of the noise frequency bin is set to zero.
 7. The filtered audio signal is reconstructed using the inverse FFT (ifft()) of the square root of the power spectrum multiplied by the FFT of the original audio signal.
 8. The filtered audio data is saved to a new file using the wavfile.write() function from SciPy.
+
+Note that this is a very basic implementation and may not work well in all situations. There are more sophisticated noise cancellation techniques that use adaptive filters and machine learning algorithms.
